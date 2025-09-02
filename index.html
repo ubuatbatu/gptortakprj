@@ -3,31 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Circle Dust Animation</title>
+  <title>Sinematik Toz Animasyonu</title>
   <style>
-    /* Center the canvas in the middle of the page with a dark background */
-    body {
+    /* Fullscreen canvas on a dark background for cinematic look */
+    html, body {
       margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
       background: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       overflow: hidden;
-      color: #fff;
     }
-
     canvas {
-      /* Transparent background so only the animation is visible */
+      display: block;
+      /* Set explicit size; canvas will render at these dimensions */
+      width: 1920px;
+      height: 1080px;
       background: transparent;
     }
   </style>
 </head>
 <body>
-  <!-- Canvas where the animation will be drawn. Adjust width/height if needed -->
-  <canvas id="animationCanvas" width="600" height="600"></canvas>
-
-  <!-- Animation script -->
+  <!-- 1920x1080 canvas for the animation -->
+  <canvas id="animationCanvas" width="1920" height="1080"></canvas>
   <script src="animation.js"></script>
 </body>
 </html>
