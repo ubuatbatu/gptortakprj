@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Dust Animation</title>
+  <style>
+    /* Center the canvas in the middle of the page with a dark background */
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      color: #fff;
+    }
+
+    canvas {
+      /* Transparent background so only the animation is visible */
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <!-- Canvas where the animation will be drawn. Adjust width/height if needed -->
+  <canvas id="animationCanvas" width="600" height="600"></canvas>
+
+  <!-- Animation script -->
+  <script src="animation.js"></script>
+</body>
+</html>
